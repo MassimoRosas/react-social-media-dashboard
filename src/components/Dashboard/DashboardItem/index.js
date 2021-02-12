@@ -9,14 +9,19 @@ const DashboardItem = ({
   dailyCounter,
   socialLogo,
   counterLogo,
+  socialMedia,
 }) => (
-  <div className="dashboard-item">
-    <img className="dashboard-logo" src={socialLogo} alt="social-logo" />
-    <h4 className="dashboard-id">{ id }</h4>
+  <div className="dashboard-item" id={socialMedia}>
+    <div className="dashboard-user">
+      <img className="dashboard-logo" src={socialLogo} alt="social-logo" />
+      <span className="dashboard-id">{ id }</span>
+    </div>
     <p className="dashboard-counter">{ counter }</p>
     <p className="dashboard-followers">Followers</p>
-    <img className="dashboard-daily-counter-logo" src={counterLogo} alt="counter-logo" />
-    <p className="dashboard-daily-counter">{dailyCounter} Today</p>
+    <div className="dashboard-progression">
+      <img className="dashboard-daily-counter-logo" src={counterLogo} alt="counter-logo" />
+      <span className="dashboard-daily-counter">{dailyCounter} Today</span>
+    </div>
   </div>
 );
 
@@ -26,6 +31,7 @@ DashboardItem.propTypes = {
   dailyCounter: PropTypes.string.isRequired,
   socialLogo: PropTypes.string.isRequired,
   counterLogo: PropTypes.string.isRequired,
+  socialMedia: PropTypes.string.isRequired,
 };
 
 export default DashboardItem;

@@ -1,9 +1,7 @@
 .app {
-  width: 500px;
-  margin: 1em auto;
-  text-align: center;
-}
-
-.app img {
-  max-width: 150px;
+  padding: 40px 25px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: hsl(230, 17%, 14%);
+  background-color: hsl(0, 0%, 100%);
 }

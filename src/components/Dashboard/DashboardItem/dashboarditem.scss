@@ -1,0 +1,93 @@
+
+.dashboard {
+  margin-top: 3em;
+
+  .dashboard-item {
+    margin: auto;
+    margin-bottom: 2em;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 5px;
+    text-align: center;
+    padding: 2em;
+
+    .dashboard-user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .dashboard-logo {
+        margin-right: 1em;
+      }
+    
+      .dashboard-id {
+        font-weight: bold;
+        color: hsl(228, 12%, 44%);
+      }
+    }
+
+    
+  
+    .dashboard-counter {
+      font-size: 60px;
+      font-weight: bold;
+      margin-top: 0.4em;
+      margin-bottom: 0.1em;
+    }
+  
+    .dashboard-followers {
+      text-transform: uppercase;
+      color:hsl(228, 12%, 44%);
+      letter-spacing: 0.4em;
+      margin-bottom: 2em;
+    }
+
+    .dashboard-progression {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .dashboard-daily-counter-logo {
+        margin-right: 0.5em;
+      }
+    
+      .dashboard-daily-counter {
+        font-weight: bold;
+        color: hsl(163, 72%, 41%);
+      }
+    }
+  }
+
+  #Facebook {
+    border-top: solid 5px hsl(208, 92%, 53%);
+  }
+
+  #Twitter {
+    border-top: solid 5px hsl(203, 89%, 53%);
+  }
+
+  #Instagram {
+    border-top:5px solid hsl(227, 47%, 96%);
+    position:relative;
+  }
+
+  #Instagram::after {
+    content:'';
+    position:absolute;
+    border-radius: 5px 5px 0 0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    top:-5px;
+    left:0;
+  }
+
+  #Youtube {
+    border-top: solid 5px hsl(348, 97%, 39%);
+
+    .dashboard-daily-counter {
+      color: hsl(356, 69%, 56%);
+    }
+  }
+  
+}

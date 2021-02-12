@@ -13,10 +13,10 @@ import DashboardItem from './DashboardItem';
 
 const Dashboard = () => (
   <div className="dashboard">
-    <DashboardItem id="@nathanf" counter="1987" dailyCounter="12" socialLogo={FacebookLogo} counterLogo={UpLogo} />
-    <DashboardItem id="@nathanf" counter="1044" dailyCounter="99" socialLogo={TwitterLogo} counterLogo={UpLogo} />
-    <DashboardItem id="@realnathanf" counter="11K" dailyCounter="1099" socialLogo={InstagramLogo} counterLogo={UpLogo} />
-    <DashboardItem id="Nathan F." counter="8239" dailyCounter="144" socialLogo={YoutubeLogo} counterLogo={DownLogo} />
+    <DashboardItem socialMedia="Facebook" id="@nathanf" counter="1987" dailyCounter="12" socialLogo={FacebookLogo} counterLogo={UpLogo} />
+    <DashboardItem socialMedia="Twitter" id="@nathanf" counter="1044" dailyCounter="99" socialLogo={TwitterLogo} counterLogo={UpLogo} />
+    <DashboardItem socialMedia="Instagram" id="@realnathanf" counter="11K" dailyCounter="1099" socialLogo={InstagramLogo} counterLogo={UpLogo} />
+    <DashboardItem socialMedia="Youtube" id="Nathan F." counter="8239" dailyCounter="144" socialLogo={YoutubeLogo} counterLogo={DownLogo} />
   </div>
 );
 
