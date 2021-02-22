@@ -53,7 +53,14 @@
     
       .dashboard-daily-counter {
         font-weight: bold;
+      }
+
+      .dashboard-daily-counter--is-up {
         color: hsl(163, 72%, 41%);
+      }
+
+      .dashboard-daily-counter--is-down {
+        color: hsl(356, 69%, 56%);
       }
     }
   }
@@ -84,10 +91,6 @@
 
   #Youtube {
     border-top: solid 5px hsl(348, 97%, 39%);
-
-    .dashboard-daily-counter {
-      color: hsl(356, 69%, 56%);
-    }
   }
   
 }
