@@ -88,3 +88,35 @@ input:checked + .slider:before {
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-title {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .title {
+        margin: 0;
+        margin-bottom: 0.5em;
+      }
+    
+      .total-followers {
+        margin: 0;
+      }
+    }
+  
+    .color-mode {
+      border: none;
+      padding: 0;
+  
+      .color-mode-text {
+        margin-right: 1em;
+      }
+    }
+  }
+}

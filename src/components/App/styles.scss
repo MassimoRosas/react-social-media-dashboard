@@ -13,3 +13,10 @@
     color: hsl(228, 12%, 44%);
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .app {
+    width: 1200px;
+    margin: auto;
+  }
+}
