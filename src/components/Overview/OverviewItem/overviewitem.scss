@@ -1,0 +1,61 @@
+.overview-item {
+  margin: auto;
+  margin-bottom: 2em;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 5px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+
+  .overview-item-first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+
+    .overview-item-description {
+      font-weight: bold;
+      color: hsl(228, 12%, 44%);
+    }
+
+    .overview-item-logo {
+      
+    }
+  }
+
+  .overview-item-second-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .overview-item-counter {
+      font-weight: bold;
+      font-size: 35px;
+    }
+  
+    .overview-item-progression {
+      display: flex;
+      align-items: center;
+      
+      .overview-item-progression-logo {
+        margin-right: 0.5em;
+      }
+
+      .overview-item-progression-counter {
+        font-weight: bold;
+      }
+
+      .overview-item-progression-counter--is-up {
+        color: hsl(163, 72%, 41%);
+      }
+
+      .overview-item-progression-counter--is-down {
+        color: hsl(356, 69%, 56%);
+      }
+    }
+  }
+
+  
+
+  
+}

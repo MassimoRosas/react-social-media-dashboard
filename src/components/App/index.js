@@ -2,7 +2,7 @@
 import React from 'react';
 
 // == Import
-import './styles.css';
+import './styles.scss';
 
 import Header from '../Header';
 import Dashboard from '../Dashboard';
