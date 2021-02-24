@@ -1,11 +1,11 @@
 .overview-item {
   margin: auto;
   margin-bottom: 2em;
-  background-color: hsl(227, 47%, 96%);
   border-radius: 5px;
   padding: 2em;
   display: flex;
   flex-direction: column;
+  background-color: var(--theme-card-background);
 
   .overview-item-first-line {
     display: flex;
@@ -15,7 +15,7 @@
 
     .overview-item-description {
       font-weight: bold;
-      color: hsl(228, 12%, 44%);
+      color: var(--theme-page-subtitle);
     }
 
     .overview-item-logo {
@@ -31,6 +31,7 @@
     .overview-item-counter {
       font-weight: bold;
       font-size: 35px;
+      color: var(--theme-page-title);
     }
   
     .overview-item-progression {

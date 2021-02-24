@@ -1,14 +1,15 @@
 
 .dashboard {
   margin-top: 3em;
+  opacity: .99;
 
   .dashboard-item {
     margin: auto;
     margin-bottom: 2em;
-    background-color: hsl(227, 47%, 96%);
     border-radius: 5px;
     text-align: center;
     padding: 2em;
+    background-color: var(--theme-card-background);
 
     .dashboard-user {
       display: flex;
@@ -22,7 +23,7 @@
     
       .dashboard-id {
         font-weight: bold;
-        color: hsl(228, 12%, 44%);
+        color: var(--theme-page-subtitle);
       }
     }
 
@@ -33,13 +34,14 @@
       font-weight: bold;
       margin-top: 0.4em;
       margin-bottom: 0.1em;
+      color: var(--theme-page-title);
     }
   
     .dashboard-followers {
       text-transform: uppercase;
-      color:hsl(228, 12%, 44%);
       letter-spacing: 0.4em;
       margin-bottom: 2em;
+      color: var(--theme-page-subtitle);
     }
 
     .dashboard-progression {

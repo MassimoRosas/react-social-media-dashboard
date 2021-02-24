@@ -1,22 +1,47 @@
-.app {
-  padding: 40px 25px;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: hsl(230, 17%, 14%);
-  background-color: hsl(0, 0%, 100%);
+#root {
+  background-color: var(--theme-page-background);
 
-  .overview-title {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 1.5em;
-    margin-top: 2em;
-    color: hsl(228, 12%, 44%);
+  .app {
+    padding: 40px 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-color: var(--theme-page-background);
+
+    .overview-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 1.5em;
+      margin-top: 2em;
+      color: var(--theme-page-subtitle);
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .app {
-    width: 1200px;
-    margin: auto;
+  #root {
+    .app {
+      margin: auto;
+      padding: 40px 150px;
+    }
   }
+}
+
+// THEMES
+
+.light {
+  --theme-page-background: hsl(0, 0%, 100%);
+  --theme-page-background-pattern: hsl(225, 100%, 98%);
+  --theme-page-title: hsl(230, 17%, 14%);
+  --theme-page-subtitle: hsl(228, 12%, 44%);
+  --theme-card-background: hsl(227, 47%, 96%);
+  --theme-toggle-button: hsl(230, 22%, 74%);
+}
+
+.dark {
+  --theme-page-background: hsl(230, 17%, 14%);
+  --theme-page-background-pattern:hsl(232, 19%, 15%);
+  --theme-page-title: hsl(0, 0%, 100%);
+  --theme-page-subtitle: hsl(228, 34%, 66%);
+  --theme-card-background: hsl(228, 28%, 20%);
+  --theme-toggle-button: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
