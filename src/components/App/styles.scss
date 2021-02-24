@@ -10,8 +10,8 @@
     .overview-title {
       font-weight: bold;
       font-size: 24px;
-      margin-bottom: 1.5em;
-      margin-top: 2em;
+      max-width: 1130px;
+      margin: 2em auto 1.5em auto;
       color: var(--theme-page-subtitle);
     }
   }
@@ -21,7 +21,7 @@
   #root {
     .app {
       margin: auto;
-      padding: 40px 150px;
+      padding: 3em 11em;
     }
   }
 }

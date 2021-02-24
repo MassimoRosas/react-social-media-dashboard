@@ -101,7 +101,8 @@
   .dashboard {
     display: flex;
     justify-content: space-between;
-
+    max-width: 1130px;
+    margin: 4em auto;
 
     .dashboard-item {
       margin: 0;
